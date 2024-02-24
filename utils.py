@@ -26,7 +26,7 @@ def read_wav(file_path):
     
     times = librosa.times_like(onset_env, sr=samplerate)
     smoothed_onset_env = onset_env > 2.35
-    plot_onset_envelope(data,onset_env, smoothed_onset_env, times, beat_times)
+    # plot_onset_envelope(data,onset_env, smoothed_onset_env, times, beat_times)
     
     return data, samplerate
 
