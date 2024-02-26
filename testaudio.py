@@ -1,8 +1,9 @@
 import sounddevice as sd
 import numpy as np
+print(sd.query_devices())
 
 # Set the device to HDMI output
-sd.default.device = 1  # Use the HDMI device index
+# sd.default.device = 0  # Use the HDMI device index
 
 # Generate a test tone
 fs = 44100  # Sample rate
